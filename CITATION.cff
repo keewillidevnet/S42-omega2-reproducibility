@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it."
+authors:
+  - family-names: Watson
+    given-names: Kevin
+title: "Exact Ω2 Identities for S_{4,2}(x) with CPU + MPS Validation"
+version: "0.1.0"
+date-released: 2026-01-11
+repository-code: "https://github.com/keewillidevnet/S42-omega2-reproducibility"
+keywords:
+  - Euler sums
+  - Nielsen polylogarithm
+  - PSLQ
+  - constant folding
+  - GPU
+  - MPS
+license: "MIT"

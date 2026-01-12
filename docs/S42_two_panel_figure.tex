@@ -1,0 +1,22 @@
+
+\begin{figure}[t]
+  \centering
+  \begin{subfigure}{0.48\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{S42_speedup_vs_precision.png}
+    \caption{Speedup vs.\ working precision.}
+    \label{fig:s42-speedup}
+  \end{subfigure}\hfill
+  \begin{subfigure}{0.48\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{S42_error_vs_precision.png}
+    \caption{Absolute error vs.\ working precision (log scale).}
+    \label{fig:s42-error}
+  \end{subfigure}
+  \caption{\textbf{Performance and accuracy of the $\Omega_2$ closed form for $S_{4,2}(x)$.}
+  (Left) The closed-form (fully folded) evaluation replaces a loop-based series with a fixed
+  dot-product, yielding increasing speedup as precision grows. (Right) Absolute error between
+  series and closed form decays rapidly with precision, confirming numerical correctness.
+  Results shown for $x\in\{1/2,\,1/4,\,-1/2\}$.}
+  \label{fig:s42-performance}
+\end{figure}

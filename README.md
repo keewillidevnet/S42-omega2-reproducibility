@@ -1,6 +1,6 @@
 # S₄,₂(x) Exact Ω₂ Identities - Reproducible Research Repository
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18226314.svg)](https://doi.org/10.5281/zenodo.18226314)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18226314.svg?v=1)](https://doi.org/10.5281/zenodo.18226314)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 > **Companion repository for:** "Exact Ω₂ Identities for S₄,₂(x) with Amortized Performance Gains" by Keenan Williams (January 2026)

@@ -1,8 +1,7 @@
 # S₄,₂(x) Exact Ω₂ Identities - Reproducible Research Repository
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
-[![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18226314.svg)](https://doi.org/10.5281/zenodo.18226314)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 > **Companion repository for:** "Exact Ω₂ Identities for S₄,₂(x) with Amortized Performance Gains" by Keenan Williams (January 2026)
 
@@ -338,15 +337,22 @@ pytest tests/ --cov=src/s42 --cov-report=html
 
 ## Citation
 
-If you use this code or the identities in your research, please cite:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18226314.svg)](https://doi.org/10.5281/zenodo.18226314)
 
+If you use this work in your research, please cite:
+
+Keenan Williams. (2026). *S42-omega2-reproducibility* (Version 1.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.18226314
+
+**BibTeX:**
 ```bibtex
-@article{williams2026s42,
-  title={Exact $\Omega_2$ Identities for $S_{4,2}(x)$ with Amortized Performance Gains},
-  author={Williams, Keenan},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2026},
-  url={https://github.com/keewillidevnet/S42-omega2-reproducibility}
+@software{williams2026s42,
+  author    = {Williams, Keenan},
+  title     = {S42-omega2-reproducibility},
+  year      = {2026},
+  publisher = {Zenodo},
+  version   = {1.0},
+  doi       = {10.5281/zenodo.18226314},
+  url       = {https://doi.org/10.5281/zenodo.18226314}
 }
 ```
 
@@ -404,7 +410,6 @@ MIT License - see [LICENSE](LICENSE) file
 
 **Keenan Williams**  
 Email: telesis001@icloud.com  
-GitHub: [@keewillidevnet](https://github.com/keewillidevnet)
 
 ---
 
@@ -415,7 +420,3 @@ GitHub: [@keewillidevnet](https://github.com/keewillidevnet)
 - Inspired by work of Borwein, Bailey, and collaborators on Euler sums
 
 ---
-
-**Repository:** https://github.com/keewillidevnet/S42-omega2-reproducibility  
-**Paper:** [arXiv:XXXX.XXXXX](https://arxiv.org/abs/XXXX.XXXXX) (to be published)  
-**Last updated:** January 12, 2026

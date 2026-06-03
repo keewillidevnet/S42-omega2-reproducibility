@@ -59,7 +59,7 @@ def verify_pslq_identity(
     
     # Compute basis
     if verbose:
-        print("\nComputing Ω₂ basis...")
+        print("\nComputing corrected relation basis...")
     
     basis = compute_omega2_basis(precision=precision)
     

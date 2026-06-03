@@ -1,17 +1,15 @@
 cff-version: 1.2.0
-message: "If you use this work, please cite it."
+title: "Certified Reductions of the Weight-6 Euler Sum at Dyadic Arguments: Corrected Revision"
+message: "If you use this repository, please cite the corrected revision and this reproducibility repository."
+type: software
 authors:
-  - family-names: Watson
-    given-names: Kevin
-title: "Exact Ω2 Identities for S_{4,2}(x) with CPU + MPS Validation"
-version: "0.1.0"
-date-released: 2026-01-11
+  - family-names: Williams
+    given-names: Keenan
 repository-code: "https://github.com/keewillidevnet/S42-omega2-reproducibility"
-keywords:
-  - Euler sums
-  - Nielsen polylogarithm
-  - PSLQ
-  - constant folding
-  - GPU
-  - MPS
-license: "MIT"
+version: "1.1.0-corrected"
+date-released: "2026-06-03"
+abstract: >
+  Corrected reproducibility repository for S_{4,2}(x) at dyadic arguments.
+  Implements the corrected x=1/2 exact closed form in a 13-element dyadic basis,
+  the certified x=1/4 depth-2 relation, and records x=-1/2 as open.
+license: MIT

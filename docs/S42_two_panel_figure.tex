@@ -1,22 +1,8 @@
-
 \begin{figure}[t]
   \centering
-  \begin{subfigure}{0.48\linewidth}
-    \centering
-    \includegraphics[width=\linewidth]{S42_speedup_vs_precision.png}
-    \caption{Speedup vs.\ working precision.}
-    \label{fig:s42-speedup}
-  \end{subfigure}\hfill
-  \begin{subfigure}{0.48\linewidth}
-    \centering
-    \includegraphics[width=\linewidth]{S42_error_vs_precision.png}
-    \caption{Absolute error vs.\ working precision (log scale).}
-    \label{fig:s42-error}
-  \end{subfigure}
-  \caption{\textbf{Performance and accuracy of the $\Omega_2$ closed form for $S_{4,2}(x)$.}
-  (Left) The closed-form (fully folded) evaluation replaces a loop-based series with a fixed
-  dot-product, yielding increasing speedup as precision grows. (Right) Absolute error between
-  series and closed form decays rapidly with precision, confirming numerical correctness.
-  Results shown for $x\in\{1/2,\,1/4,\,-1/2\}$.}
-  \label{fig:s42-performance}
+  \fbox{\parbox{0.42\linewidth}{Corrected residual-tracking panel}}
+  \hfill
+  \fbox{\parbox{0.42\linewidth}{Constant-folding speedup panel}}
+  \caption{Corrected reproducibility summary. Left: certified relations are accepted only when residuals track increasing precision and coefficients remain stable. Right: constant-folded evaluation accelerates the implemented corrected relation; the accelerator benchmark is independent of the withdrawn v1 exactness claims.}
+  \label{fig:corrected-two-panel}
 \end{figure}

@@ -41,9 +41,11 @@ setup(
         "Programming Language :: Python :: 3.11",
     ],
     python_requires=">=3.11",
-    install_requires=requirements,
+    install_requires=["mpmath>=1.3.0", "numpy>=1.24.0"],
     extras_require={
         "gpu": ["torch>=2.0.0"],
+        "viz": ["matplotlib>=3.7.0"],
+        "data": ["pandas>=2.0.0", "tqdm>=4.66.0"],
         "symbolic": ["sympy>=1.12"],
         "dev": [
             "pytest>=7.4.0",

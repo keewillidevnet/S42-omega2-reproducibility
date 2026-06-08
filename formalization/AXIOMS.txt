@@ -1,0 +1,7 @@
+'F_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'F_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Li_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Li_neg_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'args_at_z0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'S42_half_conditional' depends on axioms: [propext, Classical.choice, Quot.sound]
+'S42_half' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

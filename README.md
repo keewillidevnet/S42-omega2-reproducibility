@@ -40,14 +40,15 @@ The x = 1/4 result is deliberately not described as a reduction to independently
 
 The x = 1/2 closed form is also formalized in Lean 4, in the `formalization/` directory. This is nontrivial because Mathlib has no polylogarithms, Nielsen polylogarithms, multiple zeta values, or Euler sums. Even stating the identity requires building scaffolding from the harmonic numbers and Riemann zeta values that Mathlib does provide.
 
-Status: the main theorem `S42_half` is machine-checked modulo a single functional equation (`functionalEquation`), which is the only remaining `sorry`. Everything it rests on is fully kernel-verified, with axiom dependencies limited to `[propext, Classical.choice, Quot.sound]`:
+Status: the main theorem `S42_half` is machine-checked modulo exactly two functional-equation obligations, on the corrected domain (0, z0] with z0 = (log 2)/2. Everything else it rests on is fully kernel-verified, with axiom dependencies limited to `[propext, Classical.choice, Quot.sound]`:
 
 - `F_zero`: the base case F0(x) = -x log(1 - x) / (1 - x), via a Cauchy product.
-- `F_hasDerivAt` and `Li_hasDerivAt`: the differentiation ladder d/dx F_s = F_{s-1} / x, by term-by-term differentiation on a sub-disk.
+- `F_hasDerivAt`, `Li_hasDerivAt`: the differentiation ladder d/dx F_s = F_{s-1} / x, by term-by-term differentiation on a sub-disk.
 - `Li_neg_one`: the reduction Li_n(-1) = -(1 - 2^{1-n}) zeta(n).
-- `args_at_z0` and `S42_half_conditional`: the argument specializations and the closed form given the functional equation.
+- `args_at_z0`, `S42_half_conditional`: the argument specializations and the closed form given the functional equation.
+- `abel_neg_one`, `Li_tendsto_neg_one`, `F_tendsto_neg_one`, `a_tendsto`, `feLHS_continuousWithinAt_z0`, `feRHS_continuousWithinAt_z0`: Abel boundary continuity, which closes the endpoint z0 by a left-limit rather than assuming it.
 
-So `S42_half` is honestly proven modulo the functional equation, not unconditionally. The functional equation is a classical result, a weight-induction tower of functional equations; formalizing it is the remaining work. See `formalization/AXIOMS.txt` for the `#print axioms` output and `formalization/README.md` for build instructions.
+The two remaining `sorry`s are `fe_deriv_eq`, the weight-5 functional equation that heads the weight-induction tower, and `fe_basepoint`, its integration constant. `functionalEquation` and `S42_half` are sorry-free in their own bodies and reach `sorryAx` only through those two. An earlier statement carried a false branch over the divergent region (z0, log 2), where the argument 1 - e^{2z} leaves the unit disk; that branch has been removed, so the statement is now restricted to the convergence region and the endpoint z0 is recovered by the boundary-continuity lemmas above. See `formalization/AXIOMS.txt` for the `#print axioms` output and `formalization/README.md` for details.
 
 ## Background: the correction
 

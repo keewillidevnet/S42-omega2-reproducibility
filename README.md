@@ -1,4 +1,4 @@
-# S42 Omega2 Reproducibility — v 2.0
+# S42 Omega2 Reproducibility v2.0
 
 This repository accompanies the corrected revision of:
 
